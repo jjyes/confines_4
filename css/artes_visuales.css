@@ -1,0 +1,126 @@
+/*GRID TALLERES*/
+section{
+	padding: 25px 0;
+	margin-top: 0px;
+	text-align: center;
+}
+
+main{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+	margin: 30px 15px 50px 15px;
+}
+
+.event-container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.event-container .event{
+	box-shadow: 0 4px 16px -8px rgba(0,0,0,0.4);
+	display: flex;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.event .event-left{
+	background: #222;
+	min-width: 82px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #eee;
+	padding: 8px 48px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date{
+	font-size: 30px;
+	color: skyblue;
+	
+}
+
+.event .event-left .month{
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.event .event-left .txt_arte{
+	text-transform: uppercase;
+	font-size: .7rem;
+	letter-spacing: 1.5px;
+
+}
+
+.event .event-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 24px;
+}
+
+.event .event-right h3.event-title{
+	font-size: 24px;
+	margin:24px 0 10px 0;
+	color: #218bbb;
+	text-transform: uppercase;
+}
+
+
+.event .event-right .event-timing{
+	display: flex;
+	text-align: justify;
+	width: 150px;
+	padding: 3px;
+	border-radius: 16px;
+	margin: 10px 0px 10px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	border:1px solid gray;	
+}
+
+
+.event .event-right .event-description{
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+
+.event .event-right .event-timing ion-icon{
+	height: 20px;
+	padding-right: 5px;
+	font-size: 3rem;
+	
+}
+
+@media(max-width: 850px){
+	main{
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	}
+}
+
+@media (max-width: 550px){
+	.event{
+		flex-direction: column;
+	}
+	.event .event-left{
+		padding: 0;
+		border-radius: 8px 8px 0 0;
+	}
+
+	.event .event-left .event-date .date,
+	.event .event-left .event-date .month{
+		display: inline-block;
+		font-size: 24px;
+	}
+
+	.event .event-left .event-date{
+		padding: 10px 0;
+	}
+}

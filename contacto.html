@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Festival los Confines</title>
+		<link rel="stylesheet" href="css/contacto.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section class="banner_contacto" id="sec">
+			<header>
+				<a href="#" class="logo"></a>
+				<div id="toggle" onclick="toggle()"></div>
+			</header>
+			<div class="content_contacto">
+				<h2>festival internacional de la Poesía los confines</h2>
+				<p>TELÉFONO: 21212121</p>
+				<p>CORREO: issimplydummytextotheprintingQhjkl.c </p>
+			</div>
+			<ul class="sci">
+				<li><a href="#"><img src="img/logo/facebook.png"></a></li>
+				<li><a href="#"><img src="img/logo/twitter.png"></a></li>
+				<li><a href="#"><img src="img/logo/instagram.png"></a></li>
+				<li><a href="#"><img src="img/logo/youtube.png"></a></li>
+			</ul>
+		</section>
+		<div id="navigation">
+			<ul>
+				<li><a href="#">inicio</a></li>
+				<li><a href="QuienesSomos.html">quienes somos</a></li>
+				<li><a href="index.html">ediciones</a></li>
+				<li><a href="SedesFestival.html">sedes</a></li>
+				<li><a href="#">premios</a></li>
+				<li><a href="#">sala de prensa</a></li>
+				<li><a href="#">biblioteca virtual</a></li>
+				<li><a href="PlaneaTuVisita.html">planea tu visita</a></li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			function toggle(){
+				var sec=document.getElementById('sec');
+				var nav=document.getElementById('navigation');
+				sec.classList.toggle('active');
+				nav.classList.toggle('active');
+			}
+		</script>
+
+	</body>
+</html>
